@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Mic, Square, Sparkles, AlertCircle, Volume2, MessageSquare, Smartphone, CheckCircle2, RotateCcw } from "lucide-react";
+import { API_BASE_URL } from "../config";
 
 interface VoiceTaskInputProps {
   onTasksAdded: (newTasks: { task: string; time: string; note: string }[], modelUsed?: string) => void;
@@ -188,7 +189,7 @@ export default function VoiceTaskInput({
     setTipMessage("🤖 DeepSeek V3 大模型正在深度解析时间、任务与备忘...");
 
     try {
-      const response = await fetch("/api/parse-task", {
+      const response = await fetch(`${API_BASE_URL}/api/parse-task`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
