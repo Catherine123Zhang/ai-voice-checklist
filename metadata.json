@@ -1,0 +1,6 @@
+{
+  "name": "AI Voice Checklist",
+  "description": "An intelligent voice-activated checklist app tailored for folding screens and mobile WeChat voice input with smart task parsing using DeepSeek V3 AI.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

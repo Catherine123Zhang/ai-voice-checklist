@@ -1,0 +1,16 @@
+{
+  "name": "AI Voice Checklist",
+  "short_name": "AI语音清单",
+  "description": "智能语音日程清单，支持微信输入法转文字与大模型智能解析",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#07080b",
+  "theme_color": "#06b6d4",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
